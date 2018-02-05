@@ -11,3 +11,4 @@ if __name__ == "__main__":
     df = read_dataset()
     
     df['Country Code'].to_csv('PDreadCSV.csv')
+    df.to_html('PDreadCSV.html')
