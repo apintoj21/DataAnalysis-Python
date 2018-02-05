@@ -9,3 +9,5 @@ def read_dataset():
 
 if __name__ == "__main__":
     df = read_dataset()
+    
+    df['Country Code'].to_csv('PDreadCSV.csv')
