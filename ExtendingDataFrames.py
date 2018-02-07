@@ -30,6 +30,7 @@ s = pd.Series([80,2,50], index=['HPI','Int_rate','US_GDP_Thousands'])
 df4 = df1.append(s, ignore_index=True)
 print(df4)
 print("Merged dataframe\n",pd.merge(df1,df3, on='HPI'))
+print(pd.merge(df1,df2, on=['HPI','Int_rate']))
 '''
       HPI  Int_rate  US_GDP_Thousands
 2001   80         2                50
@@ -88,4 +89,9 @@ Merged dataframe
 3   85           2                55           3            52
 4   85           2                55           2            53
 5   88           2                65           2            50
+   HPI  Int_rate  US_GDP_Thousands_x  US_GDP_Thousands_y
+0   80         2                  50                  50
+1   85         3                  55                  55
+2   88         2                  65                  65
+3   85         2                  55                  55
 '''
