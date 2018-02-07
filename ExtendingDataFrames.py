@@ -15,3 +15,14 @@ df3 = pd.DataFrame({'HPI':[80,85,88,85],
                     'Int_rate':[2, 3, 2, 2],
                     'Low_tier_HPI':[50, 52, 50, 53]},
                    index = [2001, 2002, 2003, 2004])
+concat = pd.concat([df1,df2])
+print(concat)
+print("_____________________________________________")
+concat = pd.concat([df1,df2,df3])
+print(concat)
+print("_____________________________________________")
+df4 = df1.append(df2)
+print(df4)
+print("_____________________________________________")
+df4 = df1.append(df3)
+print(df4)
